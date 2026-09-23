@@ -65,6 +65,41 @@
         text-shadow: 0 5px 15px rgba(37, 211, 102, 0.4); /* Resplandor sutil */
     }
 
+    /* --- ANIMACIONES Y TAMAÑO PARA REDES SOCIALES --- */
+    
+    /* 1. Alineación horizontal y separación limpia */
+    ul.social {
+        list-style: none; /* Elimina los puntos de viñeta */
+        padding: 0;
+        display: flex;
+        gap: 25px; /* Espacio entre cada botón */
+        margin-top: 10px;
+    }
+
+    /* 2. Tamaño grande y transición elástica */
+    ul.social li a {
+        font-size: 2.2em !important; /* Aumenta el tamaño drásticamente */
+        color: #999999 !important; /* Color gris base elegante */
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    /* Ocultar el texto interior para dejar solo el ícono puro */
+    ul.social li a .label {
+        display: none;
+    }
+
+    /* 3. Animación de elevación al pasar el ratón */
+    ul.social li a:hover {
+        transform: translateY(-8px) scale(1.15) !important;
+    }
+
+    /* 4. Colores oficiales de marca al iluminarse */
+    ul.social li a.fa-facebook-f:hover { color: #1877F2 !important; }
+    ul.social li a.fa-instagram:hover { color: #E1306C !important; }
+    ul.social li a.fa-youtube:hover { color: #FF0000 !important; }
+
 </style>
     </head>
     <body class="homepage is-preload" id="inicio">
