@@ -100,6 +100,22 @@
     ul.social li a.fa-instagram:hover { color: #E1306C !important; }
     ul.social li a.fa-youtube:hover { color: #FF0000 !important; }
 
+    /* --- ANIMACIÓN PARA TARJETAS DE SERVICIOS --- */
+    
+    /* 1. Prepara la tarjeta para un movimiento fluido */
+    #servicios .box {
+        transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+        border-radius: 10px; /* Suaviza ligeramente las esquinas */
+        height: 100%; /* Mantiene todas las tarjetas alineadas */
+    }
+
+    /* 2. Efecto de elevación al pasar el cursor */
+    #servicios .box:hover {
+        transform: translateY(-12px) !important; /* Eleva la tarjeta 12 píxeles hacia arriba */
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important; /* Agrega una sombra profunda en la base */
+        border-bottom: 3px solid #25D366; /* Agrega un borde verde sutil en la parte inferior al elevarse */
+    }
+
 </style>
     </head>
     <body class="homepage is-preload" id="inicio">
